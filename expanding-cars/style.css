@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    overflow: hidden;
+}
+
+.card-box {
+    margin: 10vh auto;
+    width: 90%;
+}
+
+.card-box ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-box li {
+    transition: all .7s linear;
+    width: 7%;
+    height: 80vh;
+    background-color: pink;
+    border-radius: 60px;
+    background-size: cover;
+    background-position: 30%;
+}
+
+.card-box .active {
+    width: 65%;
+    background-position: 0;
+}
