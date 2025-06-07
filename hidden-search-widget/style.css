@@ -14,13 +14,15 @@ body {
 
 .search {
     position: relative;
-    display: flex;
-    justify-content: space-between;
     height: 50px;
     background-color: #fff;
 }
 
 button {
+    transition: all .3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 50px;
     height: 50px;
     outline: none;
@@ -34,16 +36,21 @@ button i {
 }
 
 .search input {
-    transition: all .5s ease;
-    width: 0;
+    transition: all .3s ease;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
     font-size: 16px;
     border: none;
     outline: none;
 }
 
-.search .active {
+.search.active .input {
     width: 200px;
-    padding: 15px;
+}
+
+.search.active .btn {
+    transform: translateX(198px);
 }
 
 .btn:focus,

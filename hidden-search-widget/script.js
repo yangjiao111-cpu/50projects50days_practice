@@ -1,7 +1,8 @@
 const btn = document.querySelector('button')
 const input = document.querySelector('input')
+const search = document.querySelector('.search');
 btn.addEventListener('click', (e) => {
-    input.classList.toggle('active')
+    search.classList.toggle('active')
     input.focus()
     e.stopPropagation()
 })
