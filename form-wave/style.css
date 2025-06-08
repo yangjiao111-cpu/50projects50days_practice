@@ -88,12 +88,12 @@ a {
 
 .form-control input:focus,
 .form-control input:valid {
-    outline: 0;
-    border-bottom-color: lightblue;
+    outline: none;
+    border-bottom-color: #add8e6;
 }
 
 .form-control input:focus+label span,
 .form-control input:valid+label span {
-    color: lightblue;
+    color: #add8e6;
     transform: translateY(-30px);
 }
