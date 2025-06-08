@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #efedd6;
+    overflow-x: hidden;
+}
+
+.container div {
+    margin: 10px;
+    width: 400px;
+    height: 200px;
+    color: #fff;
+    text-align: center;
+    line-height: 200px;
+    background-color: #4682b4;
+    border-radius: 5px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(400%);
+    transition: transform .4s ease;
+}
+
+.container div:nth-child(even) {
+    transform: translateX(-400%);
+}
+
+.container .show {
+    transform: translateX(0) !important;
+}
