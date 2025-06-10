@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin: 50px 0 30px;
+    text-align: center;
+}
+
+.asked {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.qacontainer {
+    position: relative;
+    margin: 20px 0;
+    padding: 30px;
+    font-size: 19px;
+    font-weight: 800;
+    border: 1px solid #9fa4a8;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+.qacontainer.active::before,
+.qacontainer.active::after {
+    content: '\f075';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    color: #2ecc71;
+    font-size: 7rem;
+    position: absolute;
+    opacity: 0.2;
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+}
+
+.qacontainer.active::before {
+    color: #3498db;
+    top: -10px;
+    left: -30px;
+    transform: rotateY(180deg);
+}
+
+.qacontainer span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 30px;
+    right: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.qacontainer .fa-times {
+    display: none;
+}
+
+.qacontainer.active .fa-chevron-down {
+    display: none;
+}
+
+.qacontainer.active .fa-times {
+    display: flex;
+    color: #fff;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 15px;
+}
+
+.answer {
+    display: none;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.active .answer {
+    display: block;
+}
+
+.active {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
