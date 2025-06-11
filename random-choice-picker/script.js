@@ -2,8 +2,6 @@ const text = document.querySelector('#text')
 const tokens = document.querySelector('.tokens')
 let tokenArr = null
 text.addEventListener('keyup', (e) => {
-    console.log(e.key);
-
     if (e.key === 'Enter') {
         e.target.value = ''
         if (tokenArr) {
