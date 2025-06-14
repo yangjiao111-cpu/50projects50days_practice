@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.toolbox {
+    position: relative;
+    width: 804px;
+    display: flex;
+    background-color: steelblue;
+    border: 1px solid slateblue;
+    padding: 16px;
+}
+
+#canvas {
+    border: 2px solid steelblue;
+}
+
+.toolbox>* {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    font-size: 32px;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+#clear {
+    position: absolute;
+    right: 20px;
+}
