@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #4682b4;
+}
+
+.container {
+    display: flex;
+}
+
+.container .item {
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.container .item.hovered {
+    background-color: #333;
+    border-color: white;
+    border-style: dashed;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hold {
+    border: solid 5px #ccc;
+}
