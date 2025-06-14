@@ -11,6 +11,10 @@ right.addEventListener('click', () => {
     active = (active + 1) % slide.length
     update()
 })
+window.addEventListener('keydown', (e) => {
+    if (e.key == 'ArrowRight') right.click()
+    if (e.key == 'ArrowLeft') left.click()
+})
 update()
 function update() {
     slide.forEach((e, i) => {
