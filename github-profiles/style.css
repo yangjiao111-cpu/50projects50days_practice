@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2a2a72;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.user-form {
+    width: 100%;
+    max-width: 700px;
+}
+
+.user-form input {
+    width: 100%;
+    display: block;
+    background-color: #4c2885;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 16px;
+    margin-bottom: 32px;
+    font-family: inherit;
+    font-size: 16px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+        0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.user-form input::placeholder {
+    color: #bbb;
+}
+
+.user-form input:focus {
+    outline: none;
+}
+
+.card {
+    display: flex;
+    margin: 0 24px;
+    padding: 48px;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+    background-color: #4c2885;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid #2a2a72;
+    vertical-align: bottom;
+}
+
+.user-info {
+    color: #eee;
+    margin-left: 32px;
+}
+
+.user-info h2 {
+    margin-top: 0;
+}
+
+.user-info p {
+    margin: 16px 0;
+}
+
+.user-info ul {
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+}
+
+.user-info ul li strong {
+    margin-left: 8px;
+}
